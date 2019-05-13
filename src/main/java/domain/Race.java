@@ -14,7 +14,7 @@ public class Race {
     public Race(List<String> carNames, int roundCount) {
         this.carsOnRace = new CarsFactory(carNames).createCars();
         this.roundCount = roundCount;
-        this.currentRound = 1;
+        this.currentRound = Const.FIRST_ROUND;
     }
 
     public List<Car> moveAllCarsByRoundCount() {
