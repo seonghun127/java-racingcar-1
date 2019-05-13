@@ -28,12 +28,12 @@ public class Car {
         return this.position;
     }
 
-    public int increasePositionOrNot(int randomNumber) {
+    public boolean increasePositionOrNot(int randomNumber) {
         if (Const.GO_RAN_NUM <= randomNumber) {
             this.position++;
-            return Const.CAR_MOVE_SUCCESS;
+            return true;
         }
-        return Const.CAR_MOVE_FAIL;
+        return false;
     }
 
     public boolean matchPosition(int position) {

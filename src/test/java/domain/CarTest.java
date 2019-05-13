@@ -51,12 +51,12 @@ class CarTest {
 
     @Test
     void 자동차_포지션_변화_없음_확인() {
-        assertThat(car.increasePositionOrNot(3)).isEqualTo(Const.CAR_MOVE_FAIL);
+        assertThat(car.increasePositionOrNot(3)).isFalse();
     }
 
     @Test
     void 자동차_포지션_변화_확인() {
-        assertThat(car.increasePositionOrNot(4)).isEqualTo(Const.CAR_MOVE_SUCCESS);
+        assertThat(car.increasePositionOrNot(4)).isTrue();
     }
 
     @Test
